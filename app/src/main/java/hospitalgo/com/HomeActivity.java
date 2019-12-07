@@ -51,6 +51,9 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
     //edit by hedy
     String Test;
 
+    //edit by rully
+    String Konyol;
+
 
     //location
     private static final int REQUEST_LOCATION = 1;
