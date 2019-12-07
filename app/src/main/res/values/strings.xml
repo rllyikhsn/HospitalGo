@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Hospsital Go</string>
+    <string name="access_token" translatable="false">pk.eyJ1IjoiaGVkeWZlcm5hbmRvIiwiYSI6ImNrM2hoNmgxejAwaWEzY241OHcxcm5sN28ifQ.U9AYT9OqjXQ3cGB9TPbdsA</string>
+    <string name="nama_pasien">Nama Pasien</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="keterangan_tambahan">keterangan tambahan</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="logout">Logout</string>
+    <string name="hospital_go">HOSPITAL GO</string>
+    <string name="name">Name</string>
+    <string name="jenis_penyakit">Jenis Penyakit</string>
+    <string name="lokasi_pasien">lokasi pasien</string>
+    <string name="send_and_find">Send and Find</string>
+    <string name="lokasi_anda">Lokasi Anda</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="tap_on_map_instruction">Sentuh di peta</string>
+    <string name="tracking_enabled">Lokasi Anda</string>
+    <string name="tracking_already_enabled">Lokasi Sekarang</string>
+    <string name="current_location">Lokasi Anda</string>
+    <string name="menu_streets">Menu Streets</string>
+    <string name="menu_dark">Menu Dark</string>
+    <string name="menu_light">Menu Light</string>
+    <string name="menu_outdoors">Menu Outdoors</string>
+    <string name="menu_satelit">Menu Satelit</string>
+    <string name="menu_satelit_streets">Menu Satelit Streets</string>
+    <string name="menu_traffic_night">Menu Traffic Night</string>
+    <string name="menu_traffic_day">Menu Traffic Day</string>
+    <string name="start_navigation">START NAVIGATION</string>
+    <string name="selected_place_info">TEST</string>
+    <string name="go_to_picker_activity">TESTTT</string>
+</resources>

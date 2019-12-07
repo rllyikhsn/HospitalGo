@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="penyakit_array">
+        <item></item>
+        <item>Jantung</item>
+        <item>Kehamilan</item>
+        <item>Stroke</item>
+        <item>Paru-paru</item>
+        <item>Asma</item>
+    </string-array>
+
+    <string-array name="kelamin_array">
+        <item></item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

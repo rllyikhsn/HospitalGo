@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/hospital_go"
+        android:textColor="@color/colorPrimaryDark2"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@id/text"
+        android:id="@+id/name"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/name"
+        android:id="@+id/email"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_penyakit"
+        android:layout_width="195dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/textpenyakit"
+        android:background="@drawable/spinner_bgr" />
+
+    <Spinner
+        android:id="@+id/spinner_jaminan"
+        android:layout_width="196dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/spinner_penyakit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/textkelamin"
+        android:background="@drawable/spinner_bgr" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_logout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textpenyakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/jenis_penyakit"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textkelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpenyakit"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/jenis_kelamin"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nama_pasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textkelamin"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_nama_pasien"
+            android:layout_width="344dp"
+            android:layout_height="50dp"
+            android:hint="@string/nama_pasien"
+            android:inputType="text"
+            android:textColor="@color/colorText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kettambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama_pasien"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_keterangan"
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:hint="@string/keterangan_tambahan"
+            android:inputType="text"
+            android:textColor="@color/colorText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kettambahan"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_lokasi"
+            android:layout_width="198dp"
+            android:layout_height="43dp"
+            android:hint="@string/lokasi_pasien"
+            android:inputType="text"
+            android:textColor="@color/colorText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/getLoc_btn"
+        android:text="@string/lokasi_anda"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kettambahan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/lokasi" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_send_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_logout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/send_and_find"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
