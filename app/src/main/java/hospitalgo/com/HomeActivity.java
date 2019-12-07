@@ -48,6 +48,9 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
     private Button btn_logout, btn_GetLoc, btn_send_find;
     private String URL_PASIEN = "http://192.168.1.5/data_pasien.php";
 
+    //edit by hedy
+    String Test;
+
 
     //location
     private static final int REQUEST_LOCATION = 1;
