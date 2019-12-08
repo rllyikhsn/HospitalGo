@@ -1,6 +1,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardView"
     layout_width="400"
+    app:cardCornerRadius="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -18,16 +20,40 @@
             android:textSize="18sp" />
 
 
-        <TextView
-            android:id="@+id/txt_kut"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rating" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txt_kvt"
+            <TextView
+                android:id="@+id/judulkut"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:text="Kasur Umum Tersedia " />
+
+            <TextView
+                android:layout_toRightOf="@+id/judulkut"
+                android:id="@+id/txt_kut"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:text="Rating" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Year" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/judulkvt"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:text="Kasur Khusus Tersedia "/>
+
+            <TextView
+                android:layout_toRightOf="@+id/judulkvt"
+                android:id="@+id/txt_kvt"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:text="Year" />
+        </RelativeLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

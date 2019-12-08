@@ -1,7 +1,50 @@
 package hospitalgo.com;
 
 public class M_RumahSakit {
+
+    private Integer id_rs;
     private String nama_rs;
+    private Integer spesialis_jantung;
+    private Integer spesialis_kehamilan;
+    private Integer spesialis_stroke;
+    private Integer spesialis_paruparu;
+    private Integer spesialis_asma;
+    private Integer jumlah_kasur_umum;
+    private Integer jumlah_kasur_vip;
+    private Integer kasur_umum_tersedia;
+    private Integer kasur_vip_tersedia;
+    private String website;
+    private String latitude;
+    private String longitude;
+
+    public M_RumahSakit(){
+
+    }
+
+    public M_RumahSakit(Integer id_rs, String nama_rs, Integer spesialis_jantung, Integer spesialis_kehamilan, Integer spesialis_stroke, Integer spesialis_paruparu, Integer spesialis_asma, Integer jumlah_kasur_umum, Integer jumlah_kasur_vip, Integer kasur_umum_tersedia, Integer kasur_vip_tersedia, String website, String latitude, String longitude) {
+        this.id_rs = id_rs;
+        this.nama_rs = nama_rs;
+        this.spesialis_jantung = spesialis_jantung;
+        this.spesialis_kehamilan = spesialis_kehamilan;
+        this.spesialis_stroke = spesialis_stroke;
+        this.spesialis_paruparu = spesialis_paruparu;
+        this.spesialis_asma = spesialis_asma;
+        this.jumlah_kasur_umum = jumlah_kasur_umum;
+        this.jumlah_kasur_vip = jumlah_kasur_vip;
+        this.kasur_umum_tersedia = kasur_umum_tersedia;
+        this.kasur_vip_tersedia = kasur_vip_tersedia;
+        this.website = website;
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
+
+    public Integer getId_rs() {
+        return id_rs;
+    }
+
+    public void setId_rs(Integer id_rs) {
+        this.id_rs = id_rs;
+    }
 
     public String getNama_rs() {
         return nama_rs;
@@ -91,34 +134,19 @@ public class M_RumahSakit {
         this.website = website;
     }
 
-    private Integer spesialis_jantung;
-    private Integer spesialis_kehamilan;
-    private Integer spesialis_stroke;
-    private Integer spesialis_paruparu;
-    private Integer spesialis_asma;
-    private Integer jumlah_kasur_umum;
-    private Integer jumlah_kasur_vip;
-    private Integer kasur_umum_tersedia;
-    private Integer kasur_vip_tersedia;
-    private String website;
-
-    public M_RumahSakit() {
-
-    }
-    public M_RumahSakit(String nama_rs, Integer spesialis_jantung, Integer spesialis_kehamilan, Integer spesialis_stroke, Integer spesialis_paruparu, Integer spesialis_asma, Integer jumlah_kasur_umum, Integer jumlah_kasur_vip, Integer kasur_umum_tersedia, Integer kasur_vip_tersedia, String website) {
-
-        this.nama_rs = nama_rs;
-        this.spesialis_jantung = spesialis_jantung;
-        this.spesialis_kehamilan = spesialis_kehamilan;
-        this.spesialis_stroke = spesialis_stroke;
-        this.spesialis_paruparu = spesialis_paruparu;
-        this.spesialis_asma = spesialis_asma;
-        this.jumlah_kasur_umum = jumlah_kasur_umum;
-        this.jumlah_kasur_vip = jumlah_kasur_vip;
-        this.kasur_umum_tersedia = kasur_umum_tersedia;
-        this.kasur_vip_tersedia = kasur_vip_tersedia;
-        this.website = website;
+    public String getLatitude() {
+        return latitude;
     }
 
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
 
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
 }

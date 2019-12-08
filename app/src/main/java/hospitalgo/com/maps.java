@@ -103,6 +103,7 @@ public class maps extends AppCompatActivity implements OnMapReadyCallback,
         Intent intent = getIntent();
         longitude = intent.getStringExtra("putlong");
         latitude = intent.getStringExtra("putlat");
+        Log.d("Lat dan Long : ",latitude+","+longitude);
 
         ImageButton showMenu = findViewById(R.id.jenis_peta);
         registerForContextMenu(showMenu);

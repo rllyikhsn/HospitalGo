@@ -107,10 +107,15 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
                 String mKeterangan = edit_keterangan.getText().toString().trim();
                 String mlokasi = edit_lokasi.getText().toString().trim();
                 String jpp = spinner.getSelectedItem().toString();
+                String jkp = spinner1.getSelectedItem().toString();
 
                 if (!mName_pasien.isEmpty()|| !mKeterangan.isEmpty()|| !mlokasi.isEmpty()) {
                     Intent intent = new Intent(HomeActivity.this, listrumahsakit.class);
+                    intent.putExtra("namapasien", mName_pasien);
+                    intent.putExtra("keterangan", mKeterangan);
+                    intent.putExtra("lokasi", mlokasi);
                     intent.putExtra("jpp", jpp);
+                    intent.putExtra("jkp", jkp);
                     startActivity(intent);
                     Toast.makeText(HomeActivity.this, "Rumah Sakit Tersedia!" , Toast.LENGTH_SHORT).show();
                 } else {
