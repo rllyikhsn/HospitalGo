@@ -46,7 +46,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
     private Spinner spinner, spinner1;
     private EditText edit_keterangan, edit_lokasi, edit_nama_pasien ;
     private Button btn_logout, btn_GetLoc, btn_send_find;
-    private String URL_PASIEN = "http://192.168.1.5/data_pasien.php";
+    private String URL_PASIEN = "http://192.168.100.95/data_pasien.php";
 
     //edit by hedy
     String Test;
@@ -106,9 +106,13 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
                 String mName_pasien = edit_nama_pasien.getText().toString().trim();
                 String mKeterangan = edit_keterangan.getText().toString().trim();
                 String mlokasi = edit_lokasi.getText().toString().trim();
+                String jpp = spinner.getSelectedItem().toString();
 
                 if (!mName_pasien.isEmpty()|| !mKeterangan.isEmpty()|| !mlokasi.isEmpty()) {
-                    Sendfind();
+                    Intent intent = new Intent(HomeActivity.this, listrumahsakit.class);
+                    intent.putExtra("jpp", jpp);
+                    startActivity(intent);
+                    Toast.makeText(HomeActivity.this, "Rumah Sakit Tersedia!" , Toast.LENGTH_SHORT).show();
                 } else {
                     edit_nama_pasien.setError("Silahkan masukkan Nama Pasien");
                     edit_lokasi.setError("Silahkan masukkan lokasi");
@@ -224,7 +228,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         // Another interface callback
     }
 
-    private void Sendfind() {
+   /* private void Sendfind() {
 
         final String namapasien = this.edit_nama_pasien.getText().toString().trim();
         final String keterangan = this.edit_keterangan.getText().toString().trim();
@@ -247,13 +251,13 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
                                 Intent intent = new Intent(HomeActivity.this, listrumahsakit.class);
                                 intent.putExtra("jpp", jpp);
                                 startActivity(intent);
-                                Toast.makeText(HomeActivity.this, "Send Data Sukses!" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Rumah Sakit Tersedia!" , Toast.LENGTH_SHORT).show();
 
                             }
 
                         } catch (JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(HomeActivity.this, "Send Data Gagal" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(HomeActivity.this, "Mencari Gagal" + e.toString(), Toast.LENGTH_SHORT).show();
 
                             btn_send_find.setVisibility(View.VISIBLE);
                         }
@@ -263,7 +267,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.d( "Data gagal di send" , error.toString());
+                        Log.d( "Mencari Gagal" , error.toString());
                         btn_send_find.setVisibility(View.VISIBLE);
                     }
                 })
@@ -289,7 +293,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
-
+*/
 }
 
 

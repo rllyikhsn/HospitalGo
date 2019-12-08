@@ -25,7 +25,7 @@ import java.util.List;
 
 public class listrumahsakit extends AppCompatActivity {
 
-    private String url = "http://192.168.1.5/filter_search.php";
+    private String url = "http://192.168.100.95/filter_search.php";
 
     private RecyclerView recyclerView;
 

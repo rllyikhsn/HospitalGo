@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button btn_login;
     private TextView link_regist;
     private ProgressBar loading;
-    private static String URL_LOGIN = "http://192.168.1.5/hospital_go/login.php";
+    private static String URL_LOGIN = "http://192.168.100.95/hospital_go/login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

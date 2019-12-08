@@ -29,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText ed_name, ed_email, ed_password, ed_c_password,ed_telepon;
     private Button btn_regist;
     private ProgressBar loading;
-    private static String URL_REGIST = "http://192.168.1.5/hospital_go/register.php";
+    private static String URL_REGIST = "http://192.168.100.95/hospital_go/register.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

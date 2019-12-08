@@ -11,7 +11,6 @@
     <string name="name">Name</string>
     <string name="jenis_penyakit">Jenis Penyakit</string>
     <string name="lokasi_pasien">lokasi pasien</string>
-    <string name="send_and_find">Send and Find</string>
     <string name="lokasi_anda">Lokasi Anda</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -32,4 +31,5 @@
     <string name="start_navigation">START NAVIGATION</string>
     <string name="selected_place_info">TEST</string>
     <string name="go_to_picker_activity">TESTTT</string>
+    <string name="cari_rumah_sakit">CARI RUMAH SAKIT</string>
 </resources>
